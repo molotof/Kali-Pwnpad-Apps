@@ -1,0 +1,20 @@
+package com.example.wifite;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate (Bundle savedInstanceState) 
+	{
+	super.onCreate(savedInstanceState);
+	//all of this from android terminal page
+	Intent i = new Intent ("jackpal.androidterm.RUN_SCRIPT");
+	i.addCategory(Intent.CATEGORY_DEFAULT);
+	i.putExtra("jackpal.androidterm,iInitialCommand", "su \rbootubuntu \rsh /opt/pwnpad/scripts/YOURSCRIPT.sh"); // your script should ssh in to get root (if needed) then run what you really want to do.
+	startActivity(i);
+	finish();
+	}
+}

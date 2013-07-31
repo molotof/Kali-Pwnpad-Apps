@@ -1,0 +1,401 @@
+Changelog (English)
+===================
+
+1.3.9
+Added support Gentoo (installation requires at least 4 GB of free space)
+Limitation of scroll buffer size
+Automatic mount /dev/shm
+Updated debootstrap up to 1.0.48
+Support for multiple input devices in framebuffer mode (in xorg.conf changed lines are marked as #linuxdeploy)
+Hide icon in notification bar after you exit the application
+Solved problem with running SSH in Arch Linux
+Takes into account changes in Arch Linux packages
+Bugfix: conflict with SSH applications in Android
+
+1.3.8
+Added support Ubuntu 13.04 Raring Ringtail
+Added option for stop Android UI in framebuffer mode
+Added Wi-Fi lock
+Added support armv5tel architecture for openSUSE (VNC now works)
+Bugfix: autostart problem
+
+1.3.7
+Added support Kali Linux
+Added ability to display GUI through framebuffer
+Fixed list of packages openSUSE installation
+Bugfix: pacman error "invalid option"
+
+1.3.6
+Added support Fedora 18
+Takes into account changes in openSUSE repository
+Takes into account changes in Arch Linux packages
+Added application icon in notification bar
+Bugfix: dbus error in Arch Linux and Fedora
+Bugfix: /dev/pts wrong mount mode
+
+1.3.5
+Redesigned interface (include ActionBarSherlock)
+Improved autostart feature
+Automatic update operating environment
+Added check superuser permissions (root)
+Double tap for select profile
+Bugfix: incorrect use of default parameter
+
+1.3.4
+Added command status to linuxdeploy script
+Added function startup GNU/Linux when running Android (Settings -> Autostart)
+Excluded lost package insserv form openSUSE installation
+Added DPI property for VNC
+Improved algorithm displaying reports
+
+1.3.3
+Added xorg-fonts-misc package in Arch Linux GUI installation
+Bugfix: dbus error in Debian/Ubuntu
+Bugfix: update configuration file after change profile
+
+1.3.2
+Added support openSUSE installation
+Improved Arch Linux mirrors settings
+Updated BusyBox
+Configuration file is updated only when the parameters are updated
+Script linuxdeploy can now be run from Android console
+Now can create a symbolic link to linuxdeploy in /system/bin (Settings -> Create symlink)
+Notification of need to update the operating environment
+Bugfix: wrong information size of image file in automatic calculation mode
+Bugfix: crashes when VNC display not integer number
+
+1.3.1
+Added support Fedora installation
+Improved Arch Linux locale support
+
+1.3.0
+Added support Arch Linux installation
+Added automatic calculation of image size (90% of free space, but not more than 4095 MB)
+Added subitem desktop environment "Other" (for manual settings)
+Interface improvements
+
+1.2.9
+Bugfix: sudo, upstart, gnome-session, XKL_XMODMAP_DISABLE
+Added support ext3 file system
+Improved preferences organization
+Improved automatic detection of file system
+Optimize of making disk image file
+
+1.2.8
+Bugfix: problem installing BusyBox on some devices (error updating the operating environment)
+Added support installation in directory
+Added checking mount points before installation
+Rebuilding image file at change the size
+Improved custom mounting
+
+1.2.7
+Bugfix: incorrect startup GNOME session on Ubuntu
+Added support X Window System (startup GUI over X server)
+Added automatic DNS configuration
+Added support Unity desktop environment
+
+1.2.6
+Bugfix: incorrect profile management
+Added support Ubuntu installation
+Added information of active Linux system in SysInfo
+Improved wake lock
+
+1.2.5
+Added support for profiles
+Added select file system
+Added separate localization settings
+Change TWM to XTerm
+
+1.2.4
+Added information of available mount points and partitions in SysInfo
+Added ability to select and copy text in the main window (Android 3+)
+
+1.2.3
+Added themes support (dark and light)
+
+1.2.2
+Improved resources release function
+Improved auto-scrolling
+
+1.2.1
+Bugfix: error set user password on third-party images
+Default user name changed to android
+
+1.2.0
+Improved function of the system configuration for third-party images
+
+1.1.9
+Added ability to select a desktop environment (TWM, LXDE, XFCE, GNOME, KDE)
+Added support for startup as root
+Added check for reserved usernames
+Added ability to change DNS server
+
+1.1.8
+Support mounting custom partitions from /dev (e.g. /dev/block/sda1)
+Interface improvements
+
+1.1.7
+Support for architectures ARMv5TE and above
+Added feature mounting custom partitions
+Added feature to run multiple custom scripts
+
+1.1.6
+Bugfix: error starting custom script
+Added tracing mode
+Added feature save logs to file
+
+1.1.5
+Bugfix: conflict with existing BusyBox
+Updated BusyBox up to v1.21.0
+
+1.1.4
+Improved WiFi control
+Interface improvements
+
+1.1.3
+Bugfix: error updating the operating environment on some devices
+
+1.1.2
+Added support for ext4 file system
+
+1.1.1
+Bugfix: error making new user during the installation of Debian Squeeze (it also error starting VNC server)
+
+1.1.0
+Added ability to install OS on SD card (without loop device)
+Added debug mode
+
+1.0.9
+Language of OS matched the language of interface
+
+1.0.8
+Bugfix: error make a disk image larger than 1 GB
+
+1.0.7
+Added script <INSTALL_DIR>/bin/linuxchroot
+Added information of mounted parts in SysInfo
+
+1.0.6
+Added information of storages in SysInfo
+
+1.0.5
+ARMEL/ARMHF support for SFTP (sftp-server)
+
+1.0.4
+Bugfix: incomplete removal
+Interface improvements
+
+1.0.3
+Bugfix: problem with permissions via SFTP from Linux
+Added function to reconfigure the system
+Improved backlight control
+
+1.0.2
+Bugfix: SysInfo check SSH is running
+
+1.0.1
+Bugfix: error of disk image creation
+Added information about ports on the title bar
+Updated list packages of base system installation
+
+
+История изменений (Русский)
+===========================
+
+1.3.9
+Добавлена поддержка Gentoo (для установки необходимо не менее 4 GB свободного места)
+Ограничение размера буфера прокрутки
+Автоматическое монтирование /dev/shm
+Обновлен debootstrap до версии 1.0.48
+Поддержка нескольких устройств ввода в режиме фрейм-буфера (в xorg.conf изменяемые строки отмечены как #linuxdeploy)
+Скрытие значка на панели уведомлений после выхода из приложения
+Решена проблема с запуском SSH в Arch Linux
+Учтены изменения в пакетах Arch Linux
+Исправлен конфликт с SSH-приложениями в Android
+
+1.3.8
+Добавлена поддержка Ubuntu 13.04 Raring Ringtail
+Добавлена опция отключения графического интерфейса Android в режиме фрейм-буфера
+Добавлена функция блокировки Wi-Fi
+Добавлена ​​поддержка архитектуры armv5tel для openSUSE (VNC теперь работает)
+Исправлена проблема с автозапуском
+
+1.3.7
+Добавлена поддержка Kali Linux
+Добавлена ​​возможность отображения графического интерфейса через фрейм-буфер
+Исправлен список пакетов установки openSUSE
+Исправлена ошибка: pacman error "invalid option"
+
+1.3.6
+Добавлена поддержка Fedora 18
+Учтены изменения в репозитории openSUSE
+Учтены изменения в пакетах Arch Linux
+Добавлен значок на панель уведомлений
+Исправлена ошибка dbus в Arch Linux и Fedora
+Исправлен режим монтирования /dev/pts
+
+1.3.5
+Переработан интерфейс (добавлен ActionBarSherlock)
+Доработана функция автозапуска
+Автоматическое обновление рабочего окружения
+Добавлена проверка привилегий суперпользователя (root)
+Двойное нажатие для выбора профиля
+Исправлена ошибка применения некорректных параметров по умолчанию
+
+1.3.4
+Добавлена команда status в скрипт linuxdeploy
+Добавлена функция запуска GNU/Linux при загрузке Android (Настройки -> Автозапуск)
+Из базовой установки openSUSE исключен потерянный пакет insserv
+Добавлен параметр DPI для VNC
+Доработан алгоритм отображения отчетов
+
+1.3.3
+Добавлен пакет xorg-fonts-misc к установке GUI в Arch Linux
+Исправлена ошибка dbus в Debian/Ubuntu
+Исправлена ошибка обновления конфигурационного файла после смены профиля
+
+1.3.2
+Добавлена ​​поддержка установки openSUSE
+Доработана настройка зеркал в Arch Linux
+Обновлен BusyBox
+Обновление конфигурационного файла теперь происходит только при изменении параметров
+Скрипт linuxdeploy теперь можно запускать из консоли Android
+Добавлена возможность создания символьной ссылки на linuxdeploy в /system/bin (Настройки -> Создать симлинк)
+Уведомление о необходимости обновить рабочее окружение
+Исправлена ошибка отображения размера образа в режиме автоматического расчета
+Исправлена ошибка падения приложения, когда VNC дисплей не целое число
+
+1.3.1
+Добавлена ​​поддержка установки Fedora
+Доработана поддержка локализации в Arch Linux
+
+1.3.0
+Добавлена ​​поддержка установки Arch Linux
+Добавлена функция автоматического расчета размера образа диска (90% от свободного пространства, но не больше 4095 МБ)
+Добавлен подпункт окружения рабочего стола "Другое" (для ручной настройки)
+Доработки интерфейса
+
+1.2.9
+Исправлены ошибки, связанные с sudo, upstart, gnome-session, XKL_XMODMAP_DISABLE
+Добавлена поддержка файловой системы ext3
+Улучшена организация настроек и параметров
+Доработано автоматическое определение файловой системы
+Оптимизирован механизм создания файла образа диска
+
+1.2.8
+Устранена проблема установки BusyBox на некоторых устройствах (ошибка обновления рабочего окружения)
+Добавлена поддержка установки в каталог
+Добавлена проверка точек монтирования перед установкой
+Пересоздание образа при изменении размера
+Доработана функция выборочного монтирования
+
+1.2.7
+Исправлена ошибка запуска сессии GNOME в Ubuntu
+Добавлена поддержка X Window System (запуск GUI через X-сервер)
+Добавлена автоматическая конфигурация DNS
+Добавлена поддержка окружения рабочего стола Unity
+
+1.2.6
+Исправлена ошибка некорректного управления профилями
+Добавлена ​​поддержка установки Ubuntu
+Добавлена информация об активной системе Linux
+Доработана функция управления переходом в спящий режим
+
+1.2.5
+Добавлена поддержка профилей
+Добавлена возможность выбора файловой системы
+Выбор локализации системы вынесен в отдельных пункт настроек
+Заменен TWM на XTerm
+
+1.2.4
+Добавлена информация о доступных точках монтирования и разделах
+Добавлена возможность выделения и копирования текста в главном окне (Android 3+)
+
+1.2.3
+Добавлена поддержка тем интерфейса (темная и светлая)
+
+1.2.2
+Доработана функция освобождения ресурсов перед размонтированием разделов
+Доработана автоматическая прокрутка
+
+1.2.1
+Исправлена ошибка установки пароля пользователя на некоторых образах
+Имя пользователя по умолчанию изменено на android 
+
+1.2.0
+Доработана функция переконфигурации системы для сторонних образов
+
+1.1.9
+Добавлена возможность выбора окружения рабочего стола (TWM, LXDE, XFCE, GNOME, KDE)
+Добавлена поддержка запуска системы под пользователем root
+Добавлена проверка на зарезервированные имена пользователей
+Добавлена возможность изменять адрес DNS сервера
+
+1.1.8
+Поддержка выборочного монтирования разделов из /dev (например, /dev/block/sda1)
+Доработки интерфейса
+
+1.1.7
+Реализована ​​поддержка архитектуры ARMv5TE и выше
+Добавлена функция выборочного монтирования разделов
+Добавлена ​​возможность запуска нескольких пользовательских сценариев
+
+1.1.6
+Исправлена ошибка запуска пользовательского сценария
+Добавлен режим трассировки
+Добавлена ​​функция сохранения журнала в файл
+
+1.1.5
+Исправлен конфликт с уже установленным в системе BusyBox
+Обновлен BusyBox до версии 1.21.0
+
+1.1.4
+Доработана функция управления WiFi
+Доработки интерфейса
+
+1.1.3
+Исправлена ошибка обновления рабочего окружения на некоторых устройствах
+
+1.1.2
+Добавлена поддержка файловой системы ext4
+
+1.1.1
+Исправлена ошибка создания нового пользователя при установке версии Debian Squeeze (она же ошибка запуска VNC)
+
+1.1.0
+Добавлена возможность установки ОС на SD карту (без использования образа диска)
+Добавлен режим отладки
+
+1.0.9
+Язык устанавливаемой системы теперь соответствует языку интерфейса программы
+
+1.0.8
+Исправлена ошибка создания образа диска больше 1 ГБ
+
+1.0.7
+Добавлен скрипт <INSTALL_DIR>/bin/linuxchroot
+Обновлена информация о системе, добавлен статус смонтированных разделов
+
+1.0.6
+Добавлена информация о доступных внешних накопителях
+
+1.0.5
+Поддержка обоих архитектур ARMEL/ARMHF для SFTP (sftp-server)
+
+1.0.4
+Исправлена ошибка неполного удаления
+Доработки интерфейса
+
+1.0.3
+Устранена проблема с правами доступа через SFTP из Linux
+Добавлена функция переконфигурации системы
+Доработано управление подсветкой экрана
+
+1.0.2
+Исправлена функция проверки статуса SSH сервера
+
+1.0.1
+Добавлена информация о портах в строке заголовка
+Исправлена ошибка при создании образа диска
+Обновлен список пакетов базовой установки
+

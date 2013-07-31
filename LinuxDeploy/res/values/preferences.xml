@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="screenlock" translatable="false">true</string>
+    <string name="wifilock" translatable="false">false</string>
+    <string name="fontsize" translatable="false">10</string>
+    <string name="maxline" translatable="false">100</string>
+    <string name="language" translatable="false">en</string>
+    <string name="theme" translatable="false">dark</string>
+    <string name="autostart" translatable="false">false</string>
+    <string name="appicon" translatable="false">false</string>
+    <string name="envdir" translatable="false">/data/local/linux</string>
+    <string name="symlink" translatable="false">false</string>
+    <string name="profile" translatable="false">Linux</string>
+    <string name="debug" translatable="false">false</string>
+    <string name="trace" translatable="false">false</string>
+    <string name="logs" translatable="false">false</string>
+    <string name="logfile" translatable="false">{replace}</string>
+    <string name="distribution" translatable="false">debian</string>
+    <string name="suite" translatable="false">@string/debian_suite</string>
+    <string name="mirror" translatable="false">@string/debian_mirror</string>
+    <string name="architecture" translatable="false">@string/debian_architecture</string>
+    <string name="deploytype" translatable="false">file</string>
+    <string name="diskimage" translatable="false">{replace}</string>
+    <string name="disksize" translatable="false">0</string>
+    <string name="fstype" translatable="false">auto</string>
+    <string name="username" translatable="false">android</string>
+    <string name="serverdns" translatable="false"></string>
+    <string name="locale" translatable="false">en_US.UTF-8</string>
+    <string name="installgui" translatable="false">true</string>
+    <string name="desktopenv" translatable="false">lxde</string>
+    <string name="customstartup" translatable="false">false</string>
+    <string name="customscript" translatable="false">/etc/init.d/myscript</string>
+    <string name="mountcustom" translatable="false">false</string>
+    <string name="mountpath" translatable="false">{replace}</string>
+    <string name="sshstartup" translatable="false">true</string>
+    <string name="sshport" translatable="false">22</string>
+    <string name="vncstartup" translatable="false">true</string>
+    <string name="vncdisplay" translatable="false">0</string>
+    <string name="vncdepth" translatable="false">16</string>
+    <string name="vncdpi" translatable="false">75</string>
+    <string name="vncwidth" translatable="false">800</string>
+    <string name="vncheight" translatable="false">400</string>
+    <string name="xstartup" translatable="false">false</string>
+    <string name="xdisplay" translatable="false">1</string>
+    <string name="xhost" translatable="false">127.0.0.1</string>
+    <string name="fbstartup" translatable="false">false</string>
+    <string name="fbdisplay" translatable="false">2</string>
+    <string name="fbdev" translatable="false">/dev/graphics/fb0</string>
+    <string name="fbinput" translatable="false">/dev/input/event2</string>
+    <string name="fbandroid" translatable="false">true</string>
+
+    <!-- Debian -->
+    <string name="debian_suite" translatable="false">wheezy</string>
+    <string name="debian_mirror" translatable="false">http://mirror.yandex.ru/debian</string>
+    <string name="debian_architecture" translatable="false">armel</string>
+
+    <!-- Ubuntu -->
+    <string name="ubuntu_suite" translatable="false">precise</string>
+    <string name="ubuntu_mirror" translatable="false">http://ports.ubuntu.com</string>
+    <string name="ubuntu_architecture" translatable="false">armel</string>
+
+    <!-- Arch Linux -->
+    <string name="archlinux_suite" translatable="false">latest</string>
+    <string name="archlinux_mirror" translatable="false">http://mirror.archlinuxarm.org</string>
+    <string name="archlinux_architecture" translatable="false">arm</string>
+
+    <!-- Fedora -->
+    <string name="fedora_suite" translatable="false">18</string>
+    <string name="fedora_mirror" translatable="false">http://dl.fedoraproject.org/pub/fedora-secondary/releases/</string>
+    <string name="fedora_architecture" translatable="false">arm</string>
+
+    <!-- openSUSE -->
+    <string name="opensuse_suite" translatable="false">factory</string>
+    <string name="opensuse_mirror" translatable="false">http://download.opensuse.org/ports/</string>
+    <string name="opensuse_architecture" translatable="false">armv5tel</string>
+
+    <!-- Kali Linux -->
+    <string name="kali_suite" translatable="false">kali</string>
+    <string name="kali_mirror" translatable="false">http://http.kali.org</string>
+    <string name="kali_architecture" translatable="false">armel</string>
+    
+    <!-- Gentoo -->
+    <string name="gentoo_suite" translatable="false">latest</string>
+    <string name="gentoo_mirror" translatable="false">http://mirror.yandex.ru/gentoo-distfiles/releases/</string>
+    <string name="gentoo_architecture" translatable="false">armv7a</string>
+    
+</resources>
